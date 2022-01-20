@@ -79,9 +79,10 @@ task runFrac(type: JavaExec){
   args '3'
 }
 
-task runFrac2(type: JavaExec){
-  group: 'Fraction Tasks'
-  description: 'Task which runs fraction with default parameters or given'
+
+task runFracAgain(type: JavaExec){
+  group 'Fraction Tasks'
+  description 'Task which runs fraction with default parameters or given'
 
   classpath = sourceSets.main.runtimeClasspath
 
