@@ -65,3 +65,16 @@ task runFraction(type: JavaExec) {
 // dependencies{
 //   compile 'org.json:json:20171018'
 // }
+
+task runFrac(type: JavaExec){
+  group 'Fraction Tasks'
+  description 'Tasks which runs Fraction with two arguments'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Fraction'
+
+  // default arguments if none are given
+  args '1'
+  args '3'
+}
